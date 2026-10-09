@@ -1,230 +1,196 @@
 <!DOCTYPE html>
+
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alizé Fort - Site Officiel</title>
+    <meta name="description" content="Bienvenue sur le site officiel d'Alizé Fort, club de football de Salimani Hambou. Retrouvez les actualités, le calendrier et l'effectif de la saison 2026/2027.">
+    <meta name="theme-color" content="#111111">
+    <title>Alizé Fort | Site officiel</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <!-- En-tête / Logo & Navigation -->
-    <header>
-        <div class="logo-container">
+```
+<!-- EN-TÊTE ET NAVIGATION -->
+<header>
+    <div class="logo-container">
+        <a href="#accueil" aria-label="Accueil Alizé Fort">
             <img src="logo.png" alt="Logo Alizé Fort" class="logo">
-            <div>
-                <h1>Alizé Fort</h1>
-                <p class="slogan">Ndo walozi</p>
-            </div>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#accueil">Accueil</a></li>
-                <li><a href="#calendrier">Calendrier</a></li>
-                <li><a href="#actualites">Actualités</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+        </a>
 
-    <!-- Section d'accueil -->
+        <div>
+            <h1>Alizé Fort</h1>
+            <p class="slogan">Ndo walozi</p>
+        </div>
+    </div>
+
+    <nav aria-label="Navigation principale">
+        <ul>
+            <li><a href="#accueil">Accueil</a></li>
+            <li><a href="#calendrier">Calendrier</a></li>
+            <li><a href="#effectif">Effectif</a></li>
+            <li><a href="#actualites">Actualités</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+    <!-- ACCUEIL -->
     <section id="accueil" class="hero">
-        <h2>Bienvenue sur le site officiel d'Alizé Fort</h2>
-        <p>Suivez toute l'actualité du club et le calendrier de la saison 2026/2027.</p>
+        <p>CLUB DE FOOTBALL — SALIMANI HAMBOU</p>
+
+        <h2>Bienvenue chez Alizé Fort</h2>
+
+        <p>
+            Retrouvez toute l'actualité de notre club,
+            les résultats, le calendrier du championnat
+            et les joueurs qui défendent nos couleurs.
+        </p>
+
+        <p>
+            <strong>Saison 2026/2027</strong>
+        </p>
+
+        <div class="hero-buttons">
+            <a href="#calendrier" class="btn-lire-plus">Voir le calendrier</a>
+            <a href="#effectif" class="btn-lire-plus">Découvrir l'effectif</a>
+        </div>
     </section>
 
-    <!-- Section Calendrier complet J1 à J17 -->
+    <!-- CALENDRIER DU CHAMPIONNAT -->
     <section id="calendrier" class="section">
-        <h2>Calendrier du Championnat (Ngazidja 2026/2027)</h2>
-        <div class="matchs-grid">
-            <div class="carte-match domicile">
-                <span class="journee">J1 - Mer 21 Oct 2026</span>
-                <span class="equipes">Alizé Fort vs Petit Harlem</span>
-                <span class="lieu">15H00 | Salimani</span>
-            </div>
-            <div class="carte-match exterieur">
-                <span class="journee">J2 - Jeu 29 Oct 2026</span>
-                <span class="equipes">Ngaya club vs Alizé Fort</span>
-                <span class="lieu">15H00 | Moroni</span>
-            </div>
-            <div class="carte-match domicile">
-                <span class="journee">J3 - Dim 01 Nov 2026</span>
-                <span class="equipes">Alizé Fort vs Kaz club</span>
-                <span class="lieu">15H00 | Salimani</span>
-            </div>
-            <div class="carte-match exterieur">
-                <span class="journee">J4 - Dim 15 Nov 2026</span>
-                <span class="equipes">Dynamo club vs Alizé Fort</span>
-                <span class="lieu">15H00 | Mitsamiouli</span>
-            </div>
-            <div class="carte-match exterieur">
-                <span class="journee">J5 - Jeu 19 Nov 2026</span>
-                <span class="equipes">FC Mvoumbari vs Alizé Fort</span>
-                <span class="lieu">15H00 | Foumbouni</span>
-            </div>
-            <div class="carte-match domicile">
-                <span class="journee">J6 - Mer 25 Nov 2026</span>
-                <span class="equipes">Alizé Fort vs Barrage 1</span>
-                <span class="lieu">15H00 | Salimani</span>
-            </div>
-            <div class="carte-match exterieur">
-                <span class="journee">J7 - Jeu 03 Déc 2026</span>
-                <span class="equipes">FC Mdjoiézi vs Alizé Fort</span>
-                <span class="lieu">15H00 | Nioumadzaha</span>
-            </div>
-            <div class="carte-match domicile">
-                <span class="journee">J8 - Dim 06 Déc 2026</span>
-                <span class="equipes">Alizé Fort vs FC Mtsamdou</span>
-                <span class="lieu">15H00 | Salimani</span>
-            </div>
-            <div class="carte-match exterieur">
-                <span class="journee">J9 - Dim 13 Déc 2026</span>
-                <span class="equipes">Twamaya club vs Alizé Fort</span>
-                <span class="lieu">15H00 | Mvouni</span>
-            </div>
-            <div class="carte-match domicile">
-                <span class="journee">J10 - Jeu 17 Déc 2026</span>
-                <span class="equipes">Alizé Fort vs Enfant des Comores</span>
-                <span class="lieu">15H00 | Salimani</span>
-            </div>
-            <div class="carte-match exterieur">
-                <span class="journee">J11 - Dim 20 Déc 2026</span>
-                <span class="equipes">AJSD club vs Alizé Fort</span>
-                <span class="lieu">15H00 | Gnambéni</span>
-            </div>
-            <div class="carte-match domicile">
-                <span class="journee">J12 - Jeu 24 Déc 2026</span>
-                <span class="equipes">Alizé Fort vs Avenir club</span>
-                <span class="lieu">15H00 | Salimani</span>
-            </div>
-            <div class="carte-match exterieur">
-                <span class="journee">J13 - Dim 27 Déc 2026</span>
-                <span class="equipes">US Sélea vs Alizé Fort</span>
-                <span class="lieu">15H00 | Nioumadzaha</span>
-            </div>
-            <div class="carte-match domicile">
-                <span class="journee">J14 - Jeu 31 Déc 2026</span>
-                <span class="equipes">Alizé Fort vs US Mbéni</span>
-                <span class="lieu">15H00 | Salimani</span>
-            </div>
-            <div class="carte-match exterieur">
-                <span class="journee">J15 - Dim 03 Jan 2027</span>
-                <span class="equipes">Barrage 2 vs Alizé Fort</span>
-                <span class="lieu">15H00</span>
-            </div>
-            <div class="carte-match domicile">
-                <span class="journee">J16 - Jeu 07 Jan 2027</span>
-                <span class="equipes">Alizé Fort vs JACM</span>
-                <span class="lieu">15H00 | Salimani</span>
-            </div>
-            <div class="carte-match exterieur">
-                <span class="journee">J17 - Dim 10 Jan 2027</span>
-                <span class="equipes">Mlaouni club vs Alizé Fort</span>
-                <span class="lieu">15H00 | Itsinkoudi</span>
-            </div>
-        </div>
-    </section>
-        <h2>Calendrier du Championnat (Ngazidja 2026/2027)</h2>
-        <div class="matchs-grid">
-            <div class="carte-match domicile">
-                <span class="journee">J1</span>
-                <span class="equipes">Alizé Fort vs Petit Harlm</span>
-                <span class="lieu">Domicile</span>
-            </div>
-            <div class="carte-match exterieur">
-                <span class="journee">J2</span>
-                <span class="equipes">Ngaya Club vs Alizé Fort</span>
-                <span class="lieu">Extérieur</span>
-            </div>
-            <div class="carte-match domicile">
-                <span class="journee">J3</span>
-                <span class="equipes">Alizé Fort vs Kaz Club</span>
-                <span class="lieu">Domicile</span>
-            </div>
-            <div class="carte-match exterieur">
-                <span class="journee">J4</span>
-                <span class="equipes">Dynamo vs Alizé Fort</span>
-                <span class="lieu">Extérieur</span>
-            </div>
-            <div class="carte-match exterieur">
-                <span class="journee">J5</span>
-                <span class="equipes">FC Mvoumbari vs Alizé Fort</span>
-                <span class="lieu">Extérieur</span>
-            </div>
-            <div class="carte-match domicile">
-                <span class="journee">J6</span>
-                <span class="equipes">Alizé Fort vs Barrage 1</span>
-                <span class="lieu">Domicile</span>
-            </div>
-            <div class="carte-match exterieur">
-                <span class="journee">J7</span>
-                <span class="equipes">FC Mdjoiezi vs Alizé Fort</span>
-                <span class="lieu">Extérieur</span>
-            </div>
-            <div class="carte-match domicile">
-                <span class="journee">J8</span>
-                <span class="equipes">Alizé Fort vs FC Mtsamdou</span>
-                <span class="lieu">Domicile</span>
-            </div>
-            <div class="carte-match exterieur">
-                <span class="journee">J9</span>
-                <span class="equipes">Twamaya vs Alizé Fort</span>
-                <span class="lieu">Extérieur</span>
-            </div>
-            <div class="carte-match domicile">
-                <span class="journee">J10</span>
-                <span class="equipes">Alizé Fort vs Enfant des comores</span>
-                <span class="lieu">Domicile</span>
-            </div>
-            <div class="carte-match exterieur">
-                <span class="journee">J11</span>
-                <span class="equipes">AJSD dzoidjo vs Alizé Fort</span>
-                <span class="lieu">Extérieur</span>
-            </div>
-            <div class="carte-match domicile">
-                <span class="journee">J12</span>
-                <span class="equipes">Alizé Fort vs Avenir chindini</span>
-                <span class="lieu">Domicile</span>
-            </div>
-            <div class="carte-match exterieur">
-                <span class="journee">J13</span>
-                <span class="equipes">US Selea vs Alizé Fort</span>
-                <span class="lieu">Extérieur</span>
-            </div>
-            <div class="carte-match domicile">
-                <span class="journee">J14</span>
-                <span class="equipes">Alizé Fort vs US Mbeni</span>
-                <span class="lieu">Domicile</span>
-            </div>
-            <div class="carte-match exterieur">
-                <span class="journee">J15</span>
-                <span class="equipes">Barrage 2 vs Alizé Fort</span>
-                <span class="lieu">Extérieur</span>
-            </div>
-            <div class="carte-match domicile">
-                <span class="journee">J16</span>
-                <span class="equipes">Alizé Fort vs JACM club</span>
-                <span class="lieu">Domicile</span>
-            </div>
-            <div class="carte-match exterieur">
-                <span class="journee">J17</span>
-                <span class="equipes">Fc Mlaouni vs Alizé Fort</span>
-                <span class="lieu">Extérieur</span>
-            </div>
-        </div>
-    </section>
-    <!-- SECTION EFFECTIF -->
-    <section id="effectif" class="section">
-        <h2>Effectif Officiel - Saison 2026/2027</h2>
+        <h2>Calendrier du championnat</h2>
 
-        <!-- Gardiens -->
+        <p>
+            Championnat de Ngazidja — Saison 2026/2027
+        </p>
+
+        <div class="matchs-grid">
+
+            <div class="carte-match domicile">
+                <span class="journee">J1 — Mercredi 21 octobre 2026</span>
+                <span class="equipes">Alizé Fort vs Petit Harlem</span>
+                <span class="lieu">15h00 | Salimani</span>
+            </div>
+
+            <div class="carte-match exterieur">
+                <span class="journee">J2 — Jeudi 29 octobre 2026</span>
+                <span class="equipes">Ngaya Club vs Alizé Fort</span>
+                <span class="lieu">15h00 | Moroni</span>
+            </div>
+
+            <div class="carte-match domicile">
+                <span class="journee">J3 — Dimanche 1er novembre 2026</span>
+                <span class="equipes">Alizé Fort vs Kaz Club</span>
+                <span class="lieu">15h00 | Salimani</span>
+            </div>
+
+            <div class="carte-match exterieur">
+                <span class="journee">J4 — Dimanche 15 novembre 2026</span>
+                <span class="equipes">Dynamo Club vs Alizé Fort</span>
+                <span class="lieu">15h00 | Mitsamiouli</span>
+            </div>
+
+            <div class="carte-match exterieur">
+                <span class="journee">J5 — Jeudi 19 novembre 2026</span>
+                <span class="equipes">FC Mvoumbari vs Alizé Fort</span>
+                <span class="lieu">15h00 | Foumbouni</span>
+            </div>
+
+            <div class="carte-match domicile">
+                <span class="journee">J6 — Mercredi 25 novembre 2026</span>
+                <span class="equipes">Alizé Fort vs Barrage 1</span>
+                <span class="lieu">15h00 | Salimani</span>
+            </div>
+
+            <div class="carte-match exterieur">
+                <span class="journee">J7 — Jeudi 3 décembre 2026</span>
+                <span class="equipes">FC Mdjoiézi vs Alizé Fort</span>
+                <span class="lieu">15h00 | Nioumadzaha</span>
+            </div>
+
+            <div class="carte-match domicile">
+                <span class="journee">J8 — Dimanche 6 décembre 2026</span>
+                <span class="equipes">Alizé Fort vs FC Mtsamdou</span>
+                <span class="lieu">15h00 | Salimani</span>
+            </div>
+
+            <div class="carte-match exterieur">
+                <span class="journee">J9 — Dimanche 13 décembre 2026</span>
+                <span class="equipes">Twamaya Club vs Alizé Fort</span>
+                <span class="lieu">15h00 | Mvouni</span>
+            </div>
+
+            <div class="carte-match domicile">
+                <span class="journee">J10 — Jeudi 17 décembre 2026</span>
+                <span class="equipes">Alizé Fort vs Enfant des Comores</span>
+                <span class="lieu">15h00 | Salimani</span>
+            </div>
+
+            <div class="carte-match exterieur">
+                <span class="journee">J11 — Dimanche 20 décembre 2026</span>
+                <span class="equipes">AJSD Club vs Alizé Fort</span>
+                <span class="lieu">15h00 | Gnambéni</span>
+            </div>
+
+            <div class="carte-match domicile">
+                <span class="journee">J12 — Jeudi 24 décembre 2026</span>
+                <span class="equipes">Alizé Fort vs Avenir Club</span>
+                <span class="lieu">15h00 | Salimani</span>
+            </div>
+
+            <div class="carte-match exterieur">
+                <span class="journee">J13 — Dimanche 27 décembre 2026</span>
+                <span class="equipes">US Sélea vs Alizé Fort</span>
+                <span class="lieu">15h00 | Nioumadzaha</span>
+            </div>
+
+            <div class="carte-match domicile">
+                <span class="journee">J14 — Jeudi 31 décembre 2026</span>
+                <span class="equipes">Alizé Fort vs US Mbéni</span>
+                <span class="lieu">15h00 | Salimani</span>
+            </div>
+
+            <div class="carte-match exterieur">
+                <span class="journee">J15 — Dimanche 3 janvier 2027</span>
+                <span class="equipes">Barrage 2 vs Alizé Fort</span>
+                <span class="lieu">15h00 | Lieu à confirmer</span>
+            </div>
+
+            <div class="carte-match domicile">
+                <span class="journee">J16 — Jeudi 7 janvier 2027</span>
+                <span class="equipes">Alizé Fort vs JACM</span>
+                <span class="lieu">15h00 | Salimani</span>
+            </div>
+
+            <div class="carte-match exterieur">
+                <span class="journee">J17 — Dimanche 10 janvier 2027</span>
+                <span class="equipes">Mlaouni Club vs Alizé Fort</span>
+                <span class="lieu">15h00 | Itsinkoudi</span>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- EFFECTIF OFFICIEL -->
+    <section id="effectif" class="section">
+        <h2>Effectif officiel</h2>
+        <p>Saison 2026/2027 — Alizé Fort</p>
+
+        <!-- GARDIENS -->
         <div class="categorie-poste">
-            <h3>🧤 Gardiens de But</h3>
+            <h3>🧤 Gardiens de but</h3>
+
             <div class="joueurs-grid">
                 <div class="carte-joueur">
                     <span class="nom-joueur">Mmadi Badrani</span>
                     <span class="poste-joueur">Gardien</span>
                 </div>
+
                 <div class="carte-joueur">
                     <span class="nom-joueur">Rayane Rafiou</span>
                     <span class="poste-joueur">Gardien</span>
@@ -232,50 +198,61 @@
             </div>
         </div>
 
-        <!-- Défenseurs -->
+        <!-- DÉFENSEURS -->
         <div class="categorie-poste">
             <h3>🛡️ Défenseurs</h3>
+
             <div class="joueurs-grid">
                 <div class="carte-joueur">
                     <span class="nom-joueur">Mohamed Fredine Ahamad</span>
                     <span class="poste-joueur">Défenseur</span>
                 </div>
+
                 <div class="carte-joueur">
                     <span class="nom-joueur">Yalem Ahamadi Hamadi</span>
                     <span class="poste-joueur">Défenseur</span>
                 </div>
+
                 <div class="carte-joueur">
                     <span class="nom-joueur">Aboubacar Athoumani</span>
                     <span class="poste-joueur">Défenseur</span>
                 </div>
+
                 <div class="carte-joueur">
                     <span class="nom-joueur">Chamssoudine Athoumani</span>
                     <span class="poste-joueur">Défenseur</span>
                 </div>
+
                 <div class="carte-joueur">
                     <span class="nom-joueur">Akbar Elamine</span>
                     <span class="poste-joueur">Défenseur</span>
                 </div>
+
                 <div class="carte-joueur">
                     <span class="nom-joueur">Hassane Elanziz</span>
                     <span class="poste-joueur">Défenseur</span>
                 </div>
+
                 <div class="carte-joueur">
                     <span class="nom-joueur">Elarif Hassani</span>
                     <span class="poste-joueur">Défenseur</span>
                 </div>
+
                 <div class="carte-joueur">
                     <span class="nom-joueur">Ben Iman Massimia</span>
                     <span class="poste-joueur">Défenseur</span>
                 </div>
+
                 <div class="carte-joueur">
                     <span class="nom-joueur">Soighir Mmadi</span>
                     <span class="poste-joueur">Défenseur</span>
                 </div>
+
                 <div class="carte-joueur">
                     <span class="nom-joueur">Ali Moustouifa</span>
                     <span class="poste-joueur">Défenseur</span>
                 </div>
+
                 <div class="carte-joueur">
                     <span class="nom-joueur">Ben Dilar Sedou</span>
                     <span class="poste-joueur">Défenseur</span>
@@ -283,46 +260,56 @@
             </div>
         </div>
 
-        <!-- Milieux -->
+        <!-- MILIEUX -->
         <div class="categorie-poste">
-            <h3>⚙️ Milieux de Terrain</h3>
+            <h3>⚙️ Milieux de terrain</h3>
+
             <div class="joueurs-grid">
                 <div class="carte-joueur">
                     <span class="nom-joueur">Djabir Abdou</span>
                     <span class="poste-joueur">Milieu</span>
                 </div>
+
                 <div class="carte-joueur">
                     <span class="nom-joueur">Soilahou Aboudou</span>
                     <span class="poste-joueur">Milieu</span>
                 </div>
+
                 <div class="carte-joueur">
                     <span class="nom-joueur">Youssouf Ahmed Madi</span>
                     <span class="poste-joueur">Milieu</span>
                 </div>
+
                 <div class="carte-joueur">
                     <span class="nom-joueur">Ahamada Chaanrane</span>
                     <span class="poste-joueur">Milieu</span>
                 </div>
+
                 <div class="carte-joueur">
                     <span class="nom-joueur">Akram Daidine Soule</span>
                     <span class="poste-joueur">Milieu</span>
                 </div>
+
                 <div class="carte-joueur">
                     <span class="nom-joueur">Ali Issa Irmane</span>
                     <span class="poste-joueur">Milieu</span>
                 </div>
+
                 <div class="carte-joueur">
                     <span class="nom-joueur">Ali Youssouf Kamardine</span>
                     <span class="poste-joueur">Milieu</span>
                 </div>
+
                 <div class="carte-joueur">
                     <span class="nom-joueur">Abdourazak Keldi</span>
                     <span class="poste-joueur">Milieu</span>
                 </div>
+
                 <div class="carte-joueur">
                     <span class="nom-joueur">Riyad Yada Mze</span>
                     <span class="poste-joueur">Milieu</span>
                 </div>
+
                 <div class="carte-joueur">
                     <span class="nom-joueur">Mroudjaye Youssouf</span>
                     <span class="poste-joueur">Milieu</span>
@@ -330,30 +317,36 @@
             </div>
         </div>
 
-        <!-- Attaquants -->
+        <!-- ATTAQUANTS -->
         <div class="categorie-poste">
             <h3>⚽ Attaquants</h3>
+
             <div class="joueurs-grid">
                 <div class="carte-joueur">
                     <span class="nom-joueur">Bacar Abdoullah</span>
                     <span class="poste-joueur">Attaquant</span>
                 </div>
+
                 <div class="carte-joueur">
                     <span class="nom-joueur">Omari Ali Said Ismael</span>
                     <span class="poste-joueur">Attaquant</span>
                 </div>
+
                 <div class="carte-joueur">
                     <span class="nom-joueur">Zeiyad Hilali Ibouroi</span>
                     <span class="poste-joueur">Attaquant</span>
                 </div>
+
                 <div class="carte-joueur">
                     <span class="nom-joueur">Mouhamadi Idrisse</span>
                     <span class="poste-joueur">Attaquant</span>
                 </div>
+
                 <div class="carte-joueur">
                     <span class="nom-joueur">Farahani Moumini</span>
                     <span class="poste-joueur">Attaquant</span>
                 </div>
+
                 <div class="carte-joueur">
                     <span class="nom-joueur">Hadji Salim</span>
                     <span class="poste-joueur">Attaquant</span>
@@ -361,66 +354,137 @@
             </div>
         </div>
     </section>
-    <!-- SECTION ACTUALITÉS -->
+
+    <!-- ACTUALITÉS -->
     <section id="actualites" class="section-actualites">
-        <h2>Dernières Actualités</h2>
+        <h2>Dernières actualités</h2>
+
+        <p>
+            Retrouvez les nouvelles et les moments importants
+            de la vie du club.
+        </p>
+
         <div class="actualites-grid">
 
-            <!-- Article 1 -->
+            <!-- ACTUALITÉ 1 -->
             <article class="actu-card">
                 <div class="actu-img-container">
-                    <img src="affichedumtchfcmalouzini.png" alt="Affiche du match Alizé Fort vs FC Malouzini" class="actu-img">
-                    <span class="actu-date">28 Sept 2026</span>
+                    <img
+                        src="affichedumtchfcmalouzini.png"
+                        alt="Affiche du match amical Alizé Fort contre FC Malouzini"
+                        class="actu-img"
+                        loading="lazy"
+                    >
+
+                    <span class="actu-date">28 septembre 2026</span>
                 </div>
+
                 <div class="actu-content">
                     <h3>Affiche officielle : Alizé Fort vs FC Malouzini</h3>
-                    <p>Affiche officielle de notre premier match amical de préparation face au FC Malouzini.</p>
-                    <a href="#" class="btn-lire-plus">Lire la suite</a>
+
+                    <p>
+                        Affiche officielle de notre premier match amical
+                        de préparation face au FC Malouzini.
+                    </p>
                 </div>
             </article>
 
-            <!-- Article 2 -->
+            <!-- ACTUALITÉ 2 -->
             <article class="actu-card">
                 <div class="actu-img-container">
-                    <img src="victoiresfcmalouzini.jpg" alt="Victoire amicale Alizé Fort" class="actu-img">
-                    <span class="actu-date">04 Oct 2026</span>
+                    <img
+                        src="victoiresfcmalouzini.jpg"
+                        alt="Victoire d'Alizé Fort contre FC Malouzini"
+                        class="actu-img"
+                        loading="lazy"
+                    >
+
+                    <span class="actu-date">4 octobre 2026</span>
                 </div>
+
                 <div class="actu-content">
-                    <h3>Premier match amical : Belle victoire 4-0 contre FC Malouzini</h3>
-                    <p>Pour notre premier match amical de préparation, Alizé Fort s'impose avec la manière sur le score de 4 buts à 0 face au FC Malouzini. Une très belle prestation collective pour lancer la saison !</p>
-                    <a href="#" class="btn-lire-plus">Lire la suite</a>
+                    <h3>Victoire 4-0 contre le FC Malouzini</h3>
+
+                    <p>
+                        Pour notre premier match amical de préparation,
+                        Alizé Fort s'impose sur le score de quatre buts
+                        à zéro face au FC Malouzini. Une belle prestation
+                        collective pour lancer la saison !
+                    </p>
                 </div>
             </article>
 
-            <!-- Article 3 -->
+            <!-- ACTUALITÉ 3 -->
             <article class="actu-card">
                 <div class="actu-img-container">
-                    <img src="dece.jpg" alt="Hommage Alizé Fort" class="actu-img">
-                    <span class="actu-date">08 Oct 2026</span>
+                    <img
+                        src="dece.jpg"
+                        alt="Hommage d'Alizé Fort à son ancien joueur Ali Idi"
+                        class="actu-img"
+                        loading="lazy"
+                    >
+
+                    <span class="actu-date">8 octobre 2026</span>
                 </div>
+
                 <div class="actu-content">
-                    <h3>Communiqué : Hommage et suspension des entraînements</h3>
-                    <p>C'est avec une profonde tristesse que le club Alizé Fort apprend le décès de notre ancien joueur. En sa mémoire, tous les entraînements sont suspendus jusqu'à ce samedi. Nos pensées accompagnent sa famille et ses proches.</p>
-                    <a href="#" class="btn-lire-plus">Lire la suite</a>
+                    <h3>Hommage à notre ancien joueur Ali Idi</h3>
+
+                    <p>
+                        C'est avec une profonde tristesse que le club
+                        Alizé Fort rend hommage à Ali Idi, ancien joueur
+                        et capitaine de notre équipe. Nos pensées
+                        accompagnent sa famille, ses proches et tout
+                        le village de Salimani Hambou.
+                    </p>
                 </div>
             </article>
 
         </div>
     </section>
 
-    <!-- Section Contact & Réseaux Sociaux -->
+    <!-- CONTACT ET RÉSEAUX SOCIAUX -->
     <section id="contact" class="section">
         <h2>Suivez Alizé Fort</h2>
+
+        <p>
+            Retrouvez les actualités et les informations du club
+            sur nos réseaux sociaux.
+        </p>
+
         <div class="reseaux-grid">
-            <a href="https://www.facebook.com/p/ALIZE-FORT-Salimani-Hambou-Officiel-100063595022943/" target="_blank" class="btn-social facebook">Facebook</a>
-            <a href="https://wa.me/33622505145" target="_blank" class="btn-social whatsapp">WhatsApp</a>
+            <a
+                href="https://www.facebook.com/p/ALIZE-FORT-Salimani-Hambou-Officiel-100063595022943/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn-social facebook"
+            >
+                Suivre sur Facebook
+            </a>
+
+            <a
+                href="https://wa.me/33622505145"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn-social whatsapp"
+            >
+                Contacter sur WhatsApp
+            </a>
         </div>
     </section>
 
-    <!-- Pied de page -->
-    <footer>
-        <p>&copy; 2026 Alizé Fort - Tous droits réservés | Communication</p>
-    </footer>
+</main>
+
+<!-- PIED DE PAGE -->
+<footer>
+    <p>
+        &copy; 2026 Alizé Fort — Tous droits réservés
+    </p>
+
+    <p>Salimani Hambou | Ndo walozi</p>
+</footer>
+```
 
 </body>
 </html>
+
