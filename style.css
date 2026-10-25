@@ -880,3 +880,106 @@ footer a:hover {
         transition-duration: .01ms !important;
     }
 }
+/* ACTUALITÉ VICTOIRE ALIZÉ FORT */
+
+.actu-victoire {
+    background: #151515;
+    border: 1px solid #333;
+    border-top: 5px solid #ffcc00;
+    border-radius: 12px;
+    color: #fff;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.actu-victoire:hover {
+    transform: translateY(-5px);
+}
+
+.actu-victoire .actu-content {
+    padding: 24px;
+}
+
+.badge-victoire {
+    display: inline-block;
+    background: #ffcc00;
+    color: #111;
+    padding: 7px 12px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 900;
+    margin-bottom: 12px;
+}
+
+.actu-victoire h3 {
+    color: #ffcc00;
+    margin: 12px 0;
+}
+
+.actu-victoire .actu-date {
+    color: #bbb;
+    font-size: 13px;
+}
+
+.score-match {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    margin: 22px 0;
+    padding: 18px 10px;
+    background: #080808;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.score-match span {
+    flex: 1;
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.score-match strong {
+    color: #ffcc00;
+    font-size: 28px;
+    white-space: nowrap;
+}
+
+.buteurs {
+    padding: 15px;
+    background: #242424;
+    border-left: 4px solid #ffcc00;
+    border-radius: 5px;
+}
+
+.buteurs h4 {
+    color: #ffcc00;
+    margin-bottom: 10px;
+}
+
+.buteurs p {
+    margin: 7px 0;
+    color: #fff;
+}
+
+.message-victoire {
+    margin-top: 20px;
+    color: #ffcc00;
+    text-align: center;
+    font-weight: 900;
+    line-height: 1.6;
+}
+
+@media (max-width: 480px) {
+    .actu-victoire .actu-content {
+        padding: 16px;
+    }
+
+    .score-match span {
+        font-size: 10px;
+    }
+
+    .score-match strong {
+        font-size: 23px;
+    }
+}
