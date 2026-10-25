@@ -1,7 +1,12 @@
+/* =========================================
+   ALIZÉ FORT — STYLE PROFESSIONNEL GLOBAL
+   ========================================= */
+
 :root {
     --jaune: #ffc107;
     --jaune-clair: #ffca28;
     --noir: #121212;
+    --noir-clair: #1a1a1a;
     --blanc: #ffffff;
     --gris: #b0b0b0;
     --carte: #1e1e1e;
@@ -9,180 +14,217 @@
     --ombre: 0 4px 20px rgba(0, 0, 0, 0.4);
 }
 
+/* ---------- Reset et Base ---------- */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: var(--noir);
     color: var(--blanc);
-    font-family: system-ui, -apple-system, sans-serif;
-    margin: 0;
-    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
     line-height: 1.6;
 }
-/* =========================================
-   ALIZÉ FORT — STYLE PROFESSIONNEL GLOBAL
-   ========================================= */
 
-/* ---------- Prochain match (accueil) ---------- */
+/* ---------- En-tête et Navigation ---------- */
 
-.prochain-match {
+header {
+    background-color: var(--noir-clair);
+    border-bottom: 2px solid var(--jaune);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+header h1 {
+    font-size: 20px;
+    color: var(--blanc);
+    font-weight: 800;
+}
+
+.slogan {
+    font-size: 13px;
+    color: var(--jaune);
+    font-weight: 600;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav a {
+    color: var(--blanc);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 8px 12px;
+    border-radius: 6px;
+    transition: color 0.2s ease, background 0.2s ease;
+}
+
+nav a:hover,
+nav a[aria-current="page"] {
+    color: var(--jaune);
+    background: rgba(255, 193, 7, 0.12);
+}
+
+/* ---------- Sections principales ---------- */
+
+.section {
+    padding: 80px 5% 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section h2 {
+    font-size: 28px;
+    color: var(--jaune);
+    margin-bottom: 10px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.section > p {
+    color: var(--gris);
+    margin-bottom: 30px;
+    font-size: 15px;
+}
+
+/* ---------- Hero (Accueil) ---------- */
+
+.hero {
+    min-height: 80vh;
     display: flex;
     flex-direction: column;
-    gap: 4px;
-    width: min(520px, 100%);
-    margin: 30px 0 22px;
-    padding: 20px 24px;
-    background: rgba(255, 204, 0, 0.08);
-    border: 1px solid var(--jaune);
-    border-radius: var(--rayon);
+    justify-content: center;
+    align-items: flex-start;
+    padding: 60px 5%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-.pm-label {
+.hero p:first-child {
     color: var(--jaune);
-    font-size: 14px;
     font-weight: 800;
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
 }
 
-.pm-equipes {
+.hero h2 {
+    font-size: clamp(32px, 5vw, 52px);
     color: var(--blanc);
-    font-size: clamp(19px, 3vw, 24px);
-    font-weight: 800;
-    line-height: 1.35;
+    font-weight: 900;
+    line-height: 1.2;
+    margin-bottom: 20px;
 }
 
-.pm-infos {
+.hero p:nth-of-type(2) {
     color: var(--gris);
-    font-size: 14px;
+    font-size: 18px;
+    max-width: 600px;
+    margin-bottom: 30px;
 }
 
-/* ---------- Boutons principaux et secondaires ---------- */
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
 
-.btn-principal {
+/* ---------- Boutons ---------- */
+
+.btn-lire-plus {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    padding: 14px 30px;
+    padding: 14px 28px;
     color: var(--noir);
     background: var(--jaune);
     border: 2px solid var(--jaune);
     border-radius: 10px;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 800;
-    transition: background 0.2s ease, transform 0.2s ease, border-color 0.2s ease;
+    transition: background 0.2s ease, transform 0.2s ease;
 }
 
-.btn-principal:hover,
-.btn-principal:focus-visible {
+.btn-lire-plus:hover {
     background: var(--jaune-clair);
-    border-color: var(--jaune-clair);
     transform: translateY(-2px);
 }
 
-.btn-secondaire {
-    background: transparent;
-    color: var(--jaune);
-}
+/* ---------- Calendrier & Matchs ---------- */
 
-.btn-secondaire:hover,
-.btn-secondaire:focus-visible {
-    color: var(--noir);
-    background: var(--jaune);
-    border-color: var(--jaune);
-}
-
-.centre-bouton {
-    display: flex;
-    justify-content: center;
-    margin-top: 34px;
-}
-
-/* ---------- Lien actif dans la navigation ---------- */
-
-nav a[aria-current="page"] {
-    color: var(--jaune);
-    background: rgba(255, 204, 0, 0.12);
-}
-
-/* ---------- Page joueurs / Effectif en fiches ---------- */
-
-.hero-court {
-    min-height: 230px;
-    padding: 55px 20px;
-}
-
-.fiches-grid {
+.matchs-grid {
     display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
 }
 
-.fiche-joueur {
-    display: flex;
-    flex-direction: column;
-    min-width: 0;
-    overflow: hidden;
+.carte-match {
     background: var(--carte);
     border: 1px solid #303030;
+    border-left: 5px solid var(--jaune);
     border-radius: var(--rayon);
-    box-shadow: var(--ombre);
-    transition: transform 0.25s ease, border-color 0.25s ease;
-}
-
-.fiche-joueur:hover {
-    transform: translateY(-4px);
-    border-color: var(--jaune);
-}
-
-.fiche-photo {
-    position: relative;
-    aspect-ratio: 3 / 4;
-    background: #252525;
-}
-
-.fiche-photo img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center top;
-}
-
-.fiche-numero {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    min-width: 38px;
-    padding: 5px 9px;
-    color: var(--noir);
-    background: var(--jaune);
-    border-radius: 8px;
-    text-align: center;
-    font-size: 16px;
-    font-weight: 800;
-    line-height: 1.2;
-}
-
-.fiche-infos {
+    padding: 20px;
     display: flex;
     flex-direction: column;
-    gap: 3px;
-    padding: 14px 16px 16px;
-    border-top: 3px solid var(--jaune);
+    gap: 8px;
+    box-shadow: var(--ombre);
+    transition: transform 0.2s ease;
 }
 
-.fiche-nom {
-    color: var(--blanc);
-    font-size: 16px;
+.carte-match:hover {
+    transform: translateY(-3px);
+}
+
+.carte-match .journee {
+    color: var(--jaune);
+    font-size: 13px;
     font-weight: 700;
-    line-height: 1.4;
-    overflow-wrap: anywhere;
+    text-transform: uppercase;
 }
 
-.fiche-poste {
+.carte-match .equipes {
+    color: var(--blanc);
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.carte-match .lieu {
     color: var(--gris);
     font-size: 13px;
 }
 
-/* ---------- Tableaux professionnels (Classement & Effectif) ---------- */
+/* ---------- Tableaux (Classement) ---------- */
 
 .table-responsive {
     width: 100%;
@@ -203,7 +245,7 @@ nav a[aria-current="page"] {
 }
 
 .effectif-table th {
-    background-color: #1a1a1a;
+    background-color: var(--noir-clair);
     color: var(--jaune);
     font-weight: 700;
     padding: 14px 16px;
@@ -219,55 +261,190 @@ nav a[aria-current="page"] {
     white-space: nowrap;
 }
 
-.effectif-table tbody tr {
-    transition: background-color 0.2s ease;
-}
-
 .effectif-table tbody tr:hover {
     background-color: rgba(255, 255, 255, 0.04);
 }
 
-/* Style de mise en valeur spécifique pour Alizé Fort dans le classement */
-.effectif-table tr.ligne-alize-fort {
-    background-color: rgba(255, 193, 7, 0.15);
-    font-weight: bold;
+/* ---------- Effectif (Fiches Joueurs) ---------- */
+
+.categorie-poste {
+    margin-bottom: 40px;
+}
+
+.categorie-poste h3 {
+    color: var(--blanc);
+    font-size: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #303030;
+    padding-bottom: 8px;
+}
+
+.joueurs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 15px;
+}
+
+.carte-joueur {
+    background: var(--carte);
+    border: 1px solid #303030;
+    border-radius: var(--rayon);
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
     border-left: 4px solid var(--jaune);
+    box-shadow: var(--ombre);
+    transition: transform 0.2s ease;
 }
 
-/* ---------- Adaptations mobiles et tablettes ---------- */
-
-@media (max-width: 900px) {
-    .fiches-grid {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-    }
+.carte-joueur:hover {
+    transform: translateY(-3px);
 }
 
-@media (max-width: 600px) {
-    .fiches-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 12px;
+.nom-joueur {
+    color: var(--blanc);
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.poste-joueur {
+    color: var(--gris);
+    font-size: 13px;
+}
+
+/* ---------- Actualités ---------- */
+
+.section-actualites {
+    padding: 80px 5% 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.actualites-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 25px;
+}
+
+.actu-card {
+    background: var(--carte);
+    border: 1px solid #303030;
+    border-radius: var(--rayon);
+    overflow: hidden;
+    box-shadow: var(--ombre);
+    display: flex;
+    flex-direction: column;
+}
+
+.actu-img-container {
+    position: relative;
+    height: 200px;
+    background: #111;
+}
+
+.actu-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.actu-date {
+    position: absolute;
+    bottom: 10px;
+right: 10px;
+    background: var(--noir);
+    color: var(--jaune);
+    padding: 5px 10px;
+    font-size: 12px;
+    font-weight: 700;
+    border-radius: 6px;
+    border: 1px solid var(--jaune);
+}
+
+.actu-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.actu-content h3 {
+    color: var(--blanc);
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.actu-content p {
+    color: var(--gris);
+    font-size: 14px;
+}
+
+/* ---------- Réseaux sociaux et Contact ---------- */
+
+.reseaux-grid {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.btn-social {
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+    color: var(--noir);
+    background: var(--jaune);
+    transition: opacity 0.2s ease;
+}
+
+.btn-social:hover {
+    opacity: 0.9;
+}
+
+/* ---------- Pied de page ---------- */
+
+footer {
+    background-color: var(--noir-clair);
+    border-top: 1px solid #303030;
+    text-align: center;
+    padding: 40px 5%;
+    color: var(--gris);
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 60px;
+}
+
+footer p:first-child {
+    color: var(--blanc);
+    font-weight: 600;
+}
+
+/* ---------- Responsive Mobile ---------- */
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px;
     }
 
-    .prochain-match {
-        padding: 17px 18px;
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
     }
 
-    .btn-principal {
-        width: 100%;
-        max-width: 300px;
+    .hero {
+        text-align: center;
+        align-items: center;
+        min-height: 60vh;
     }
 
-    .fiche-infos {
-        padding: 11px 12px 13px;
-    }
-
-    .fiche-nom {
-        font-size: 14px;
-    }
-
-    .effectif-table th, 
-    .effectif-table td {
-        padding: 10px 12px;
-        font-size: 13px;
+    .hero-buttons {
+        justify-content: center;
     }
 }
