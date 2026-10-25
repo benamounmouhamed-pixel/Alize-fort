@@ -1,3 +1,22 @@
+:root {
+    --jaune: #ffc107;
+    --jaune-clair: #ffca28;
+    --noir: #121212;
+    --blanc: #ffffff;
+    --gris: #b0b0b0;
+    --carte: #1e1e1e;
+    --rayon: 12px;
+    --ombre: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+body {
+    background-color: var(--noir);
+    color: var(--blanc);
+    font-family: system-ui, -apple-system, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
 /* =========================================
    ALIZÉ FORT — STYLE PROFESSIONNEL GLOBAL
    ========================================= */
