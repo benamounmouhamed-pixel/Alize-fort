@@ -983,3 +983,192 @@ footer a:hover {
         font-size: 23px;
     }
 }
+/* ==========================================
+   ACTUALITE - VICTOIRE CONTRE NGAYA CLUB
+   ALIZE FORT DE SALIMANI
+========================================== */
+
+.actu-victoire {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(145deg, #202020, #090909);
+    color: #ffffff;
+    border: 1px solid #383838;
+    border-top: 5px solid #ffcc00;
+    border-radius: 14px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.actu-victoire:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(255, 204, 0, 0.15);
+}
+
+.actu-victoire .actu-content {
+    padding: 25px;
+}
+
+/* DATE */
+
+.actu-victoire .actu-date {
+    color: #aaaaaa;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 15px;
+}
+
+/* BADGE VICTOIRE */
+
+.actu-victoire .badge-victoire {
+    display: inline-block;
+    background: #ffcc00;
+    color: #111111;
+    padding: 8px 16px;
+    border-radius: 30px;
+    font-size: 12px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    box-shadow: 0 0 15px rgba(255, 204, 0, 0.2);
+}
+
+/* TITRE */
+
+.actu-victoire h3 {
+    color: #ffcc00;
+    font-size: 23px;
+    font-weight: 900;
+    line-height: 1.4;
+    margin: 18px 0 15px;
+}
+
+/* DESCRIPTION */
+
+.actu-victoire .actu-content > p:not(.actu-date):not(.message-victoire) {
+    color: #dddddd;
+    font-size: 14px;
+    line-height: 1.9;
+    margin-bottom: 15px;
+}
+
+/* SCORE DU MATCH */
+
+.actu-victoire .score-match {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    gap: 10px;
+    background: linear-gradient(120deg, #292929, #080808);
+    border: 1px solid #444444;
+    border-radius: 12px;
+    padding: 24px 12px;
+    margin: 25px 0;
+    text-align: center;
+}
+
+.actu-victoire .score-match span {
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 900;
+    line-height: 1.5;
+}
+
+.actu-victoire .score-match strong {
+    color: #ffcc00;
+    font-size: 36px;
+    font-weight: 900;
+    white-space: nowrap;
+    text-shadow: 0 0 15px rgba(255, 204, 0, 0.3);
+}
+
+/* BUTEURS */
+
+.actu-victoire .buteurs {
+    background: #202020;
+    border: 1px solid #3b3b3b;
+    border-left: 5px solid #ffcc00;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.actu-victoire .buteurs h4 {
+    color: #ffcc00;
+    font-size: 15px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.actu-victoire .buteurs p {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    background: #111111;
+    border: 1px solid #333333;
+    border-radius: 7px;
+    padding: 12px 14px;
+    margin: 9px 0;
+}
+
+.actu-victoire .buteurs p strong {
+    color: #ffffff;
+    font-size: 15px;
+}
+
+.actu-victoire .buteurs p span {
+    color: #ffcc00;
+    font-size: 13px;
+    font-weight: 800;
+}
+
+/* MESSAGE FINAL */
+
+.actu-victoire .message-victoire {
+    color: #ffcc00;
+    font-size: 13px;
+    font-weight: 900;
+    text-align: center;
+    line-height: 1.8;
+    letter-spacing: 1px;
+    margin-top: 25px;
+    padding-top: 18px;
+    border-top: 1px solid #444444;
+}
+
+/* ADAPTATION TELEPHONE */
+
+@media screen and (max-width: 480px) {
+
+    .actu-victoire .actu-content {
+        padding: 17px;
+    }
+
+    .actu-victoire h3 {
+        font-size: 19px;
+    }
+
+    .actu-victoire .score-match {
+        gap: 5px;
+        padding: 18px 8px;
+    }
+
+    .actu-victoire .score-match span {
+        font-size: 10px;
+    }
+
+    .actu-victoire .score-match strong {
+        font-size: 26px;
+    }
+
+    .actu-victoire .buteurs {
+        padding: 14px;
+    }
+
+    .actu-victoire .buteurs p {
+        padding: 10px;
+    }
+}
